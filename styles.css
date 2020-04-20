@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family= Abhaya+Libre| EB+Garamond|Galada|Judson|Ibarra+Real+Nova|Lato|Lobster|Martel|Neuton|Noto+Serif|Open+Sans|Poppins|PT+Serif+Caption|Playfair+Display+SC|Roboto|Unna&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: #dde1e7;
+}
+
+.title {
+    display: block;
+    justify-content: center;
+    align-self: center;
+    color: #333;
+    font-family: 'Judson', 'Abhaya Libre';
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.calculator {
+    width: 400px;
+    background: #dde1e7;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+form .result {
+    height: 60px;
+    width: 100%;
+    background: #dde1e7;
+    border-radius: 5px;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.result input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #595959;
+    pointer-events: none;
+    padding: 0 20px;
+    text-align: right;
+    font-family: 'Poppins' sans-serif;
+}
+
+form .buttons {
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.buttons input[type="button"] {
+    height: 56px;
+    width: 56px;
+    font-size: 23px;
+    margin: 6px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #dde1e7;
+    color: #595959;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.buttons input[type="button"]:focus {
+    transform: scale(0.9);
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+    color: #1b9b;
+}
+
+.last-footer {
+    font-size: 1rem;
+    text-align: center;
+    align-self: center;
+    padding: 5px;
+    margin-top: 30px;
+    font-family: 'Judson' 'Abhaya Libre';
+}
+
+.last-footer span {
+    color: #656565;
+}
+
+.last-footer a {
+    color: #1b9bff;
+    text-decoration: none;
+}
+
+.last-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .title {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.3rem;
+        margin-top: 20px;
+    }
+    .calculator {
+        display: block;
+        width: 600px;
+        height: 100%;
+        padding: 20px 10px;
+    }
+}
